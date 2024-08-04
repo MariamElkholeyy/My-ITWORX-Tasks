@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sidebar{
+.sidebar {
     padding: 45px 20px;
     position: fixed;
     top: 0;
@@ -24,7 +24,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
-.sidebar button{
+
+.sidebar button {
     background-image: linear-gradient(to right, #e4001e, #ff7700);
     color: #fff;
     padding: 10px 40px;
@@ -34,41 +35,44 @@
     font-weight: bolder;
     display: flex;
     justify-content: center;
-    transition: background-image 0.8s ease-in-out ,color 0.5s ease-in-out;
+    transition: background-image 0.8s ease-in-out, color 0.5s ease-in-out;
 }
+
 .sidebar button:active {
     color: #000;
-    font-weight:bolder;
-} 
+    font-weight: bolder;
+}
 
-.sidebar button:focus{
+.sidebar button:focus {
     outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
-.sidebar button:hover{
+.sidebar button:hover {
     background-image: linear-gradient(to right, #ff7700, #D60220);
     color: #fff;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
     color: #000;
 
 }
-li{
-    
+
+li {
+
     font-weight: bold;
     list-style-type: none;
     font-style: none;
     text-decoration: none;
     padding: 10px 10px;
     border-radius: 12px;
-    
-} 
 
-a{
+}
+
+a {
     text-decoration: none;
     color: #000;
     font-size: 18px;
@@ -78,26 +82,27 @@ a{
 }
 
 
-li:hover{
+li:hover {
     padding-right: 15vw;
-    background : rgb(231, 231, 231);
+    background: rgb(231, 231, 231);
     color: #fff;
     border-radius: 12px;
     /* padding: 10px ;
     padding-right: 14.5vw; */
 }
 
-li:focus{
+li:focus {
     outline: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.nominations{
+main {
     padding: 10px;
     /* background-color: #f7f7f7; */
     border-radius: 12px;
-    width: 80%;
-    height: 100%;
+    /* width: 80%; */
+    /* width: 1200px;
+    height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -107,21 +112,25 @@ li:focus{
     font-weight: bold;
     color: #000;
     transition: all 0.5s ease-in-out;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-left: 25%;
     margin-right: 200px;
+    padding-right: 20px;
 
 }
-.title{
-    font-size: 35px;
+
+.title {
+    font-size: 40px;
     font-weight: bolder;
     color: #000;
     text-align: left;
     padding: 20px;
-    
+    padding-top: 0;
+
 
 }
-.nominations p{
+
+.nominations p {
     font-size: 18px;
     font-weight: normal;
     color: #636363;
@@ -130,16 +139,18 @@ li:focus{
     margin-left: 20px;
 
 }
+
 .nominee {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
-.nominee img{
+
+.nominee img {
     border-radius: 70%;
 }
 
-.nominate-button{
+.nominate-button {
     margin: 30px 0px 30px 20px;
     background-color: #EBEBEB;
     color: #fff;
@@ -150,12 +161,14 @@ li:focus{
     font-size: 18px;
     font-weight: bold;
 }
-i{
+
+i {
     font-size: 18px;
     color: #000;
-    
+
 }
-.nominationEmployees{
+
+.nominationEmployees {
     /* margin-left: 20px; */
     display: flex;
     flex-direction: row;
@@ -166,12 +179,96 @@ i{
 
 }
 
-.nominationEmployeestext{
+.nominationEmployeestext {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: start;
 }
 
-span{
+span {
     margin-left: 20px;
+}
+
+
+.current-nominations , .previous-nominations {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+}
+
+.current-nominations , .previous-nominations h2 {
+    margin-bottom: 20px;
+}
+
+.nominee {
+    margin-bottom: 15px;
+}
+
+.nominee img {
+    margin-right: 15px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.nominee-info p {
+    font-weight: lighter;
+    color: #636363;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    margin-left: 55vw;
+
+}
+
+.current-nominations button {
+    padding: 10px 20px;
+    margin-right: 10px ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    display: flex;
+    justify-items: end;
+
+}
+
+.save {
+    color: #fff;
+    background-image: linear-gradient(to right, #e4001e, #aa0000);
+    transition: background-image 0.8s ease-in-out, color 0.5s ease-in-out;
+
+}
+
+.cancel {
+    color: #000;
+    background-image: linear-gradient(to right, #dddddd, #d6d6d6);
+    transition: background-image 0.8s ease-in-out, color 0.5s ease-in-out;
+
+}
+
+.current-nominations button:active {
+    color: #000;
+    font-weight: bolder;
+}
+
+.current-nominations button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.current-nominations button:nth-child(1):hover {
+    background-image: linear-gradient(to right, #d6d6d6, #a7a7a7);
+    color: #990000;
+    box-shadow: #636363;
+}
+
+.current-nominations button:nth-child(2):hover {
+    background-image: linear-gradient(to right, #aa0000, #D60220);
+    color: #fff;
 }
