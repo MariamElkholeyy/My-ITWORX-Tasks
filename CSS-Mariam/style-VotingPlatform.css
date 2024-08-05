@@ -27,8 +27,9 @@
 
 .sidebar button {
     background-image: linear-gradient(to right, #e4001e, #ff7700);
+    font-size: 14px;
     color: #fff;
-    padding: 10px 40px;
+    padding: 10px 36px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
