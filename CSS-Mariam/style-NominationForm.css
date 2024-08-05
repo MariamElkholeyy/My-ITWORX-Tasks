@@ -5,13 +5,14 @@
 }
 
 body{
-    margin: 200px;
+    margin: 20px 200px;
     padding: 20px;
 
     font-family: Arial, sans-serif;
     background-color: white;
     
 }
+
 /* Nominate a College */
 h1{
     color: #333;
@@ -151,6 +152,8 @@ textarea{
     height: 110px;
     color: #616161;
 }
+
+
 
 /* media queries for responsiveness */
 

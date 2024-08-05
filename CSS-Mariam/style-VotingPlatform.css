@@ -83,7 +83,8 @@ a {
 
 
 li:hover {
-    padding-right: 15vw;
+    width: 260px;
+    padding-right: 5%;
     background: rgb(231, 231, 231);
     color: #fff;
     border-radius: 12px;
@@ -198,7 +199,11 @@ span {
     align-items: start;
 }
 
-.current-nominations , .previous-nominations h2 {
+.previous-nominations h2 {
+    margin: 20px 0;
+}
+
+.current-nominations   h2 {
     margin-bottom: 20px;
 }
 
